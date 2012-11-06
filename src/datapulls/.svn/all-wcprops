@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls
+END
+peakwindgusts.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/peakwindgusts.py
+END
+monthly.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/monthly.py
+END
+Summer5mPrecip-AK-Barrow-2005To2011.py
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/Summer5mPrecip-AK-Barrow-2005To2011.py
+END
+ecosystemModelProduct.py
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/ecosystemModelProduct.py
+END
+crnExtremes.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/crnExtremes.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/__init__.py
+END
+solarPOR.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/solarPOR.py
+END
+windspeedGueck.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/windspeedGueck.py
+END
+daily.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/daily.py
+END
+PrecipTotalsForLee.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/PrecipTotalsForLee.py
+END
+monthlySoilAvgAndStdev.py
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/monthlySoilAvgAndStdev.py
+END
+AK_Barrow_Precip_Record.csv
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/AK_Barrow_Precip_Record.csv
+END
+getNumMissingSoil.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/getNumMissingSoil.py
+END
+soilTemperatureMaxAndMin.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/soilTemperatureMaxAndMin.py
+END
+highestYearlyPrecip.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/highestYearlyPrecip.py
+END
+elementAvailability.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/elementAvailability.py
+END
+airTemperatureMaxAndMin.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/airTemperatureMaxAndMin.py
+END
+windspeedBB.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/windspeedBB.py
+END

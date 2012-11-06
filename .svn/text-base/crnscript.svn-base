@@ -1,0 +1,20 @@
+#!/bin/sh
+DIR=$(dirname $0) # my current directory
+
+# Create the jython classpath.  This includes all of the jars in lib/
+# and all of the appropriate resources
+CP=''
+for f in $(ls -1 ${DIR}/lib/*.jar); do
+    CP=${CP}:$DIR/lib/$(basename $f)
+done
+for f in $(ls -1 ${DIR}/lib/*.egg); do
+    CP=${CP}:$DIR/lib/$(basename $f)
+done
+CP=${CP:1}:${DIR}/resources:${DIR}/resources/python
+
+# if we have no args, go ahead and start the interactive startup.
+if [ -z $@ ]; then
+    java -classpath $CP org.python.util.jython -i ${DIR}/resources/interactiveStartup.py
+else
+    java -classpath $CP org.python.util.jython $@
+fi

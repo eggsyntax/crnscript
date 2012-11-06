@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/departures
+END
+US_annual_tx_deps.dat
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/departures/US_annual_tx_deps.dat
+END
+US_annual_tn_deps.dat
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/departures/US_annual_tn_deps.dat
+END
+departuresbyaltitude.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/datapulls/departures/departuresbyaltitude.py
+END

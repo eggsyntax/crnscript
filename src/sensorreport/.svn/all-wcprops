@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/sensorreport
+END
+ReportWriter.py
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/sensorreport/ReportWriter.py
+END
+graphSensorLayer.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/sensorreport/graphSensorLayer.py
+END
+StandardReport.py
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/sensorreport/StandardReport.py
+END
+soilMonthlyReport.py
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/sensorreport/soilMonthlyReport.py
+END
+SoilReport.py
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/src/sensorreport/SoilReport.py
+END

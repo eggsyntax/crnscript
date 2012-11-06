@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis
+END
+ElementDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/ElementDaoImpl.html
+END
+ObservationDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/ObservationDaoImpl.html
+END
+StreamDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/StreamDaoImpl.html
+END
+DatetimeDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/DatetimeDaoImpl.html
+END
+ElementDaoImpl.LastModsQueryBuilderImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/ElementDaoImpl.LastModsQueryBuilderImpl.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/package-frame.html
+END
+ConnectionDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/ConnectionDaoImpl.html
+END
+PorDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/PorDaoImpl.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/package-summary.html
+END
+StationDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/StationDaoImpl.html
+END
+StationMetadataDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/StationMetadataDaoImpl.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/package-tree.html
+END
+QcDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ibatis/QcDaoImpl.html
+END

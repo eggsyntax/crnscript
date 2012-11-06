@@ -1,0 +1,168 @@
+1.16:
+        - Removed calls to soilsip01 ftp product now that all soil data is in the database.
+        - Added sensorreport directory which holds a class for creating a sensor report
+          for specified elements and stations, a script for creating a soil-specific report,
+          and a handly graphing script that allows for easier visual inspection of the
+          report output.
+1.15:
+	- Added subhourly handling for the new five-minute elements.
+	- FactCollection can now be constructed with no argument, in which case the resulting 
+		FactCollection will be empty, eg 'fc = FactCollection()'.
+1.14:
+	- Corrected some issues that arose from the addition of 5-minute soil elements and
+		changes to element descriptions.
+1.13:
+    - FactCollection.forElement() and the other related methods now return an empty FactCollection if
+        no Facts are found for the element, instead of raising a KeyError, so client code
+        can be simpler.
+	- Added uploadDataToFtp() and uploadFileToFtp() functions for uploading data directly to 
+		the FTP server.
+	- The first listed change under 1.12 has been reverted. methods like findStations() and 
+		getAllStations() now retrieve all stations again, whether visible or not. It turned
+		out it was just too easy to write scripts that threw errors, since the DAO methods
+		like getStationsCurrentlyWithSmSt() returned conflicting results.
+	- printlist() and printfile() now strip trailing newlines from each line; this ensures that
+		if you pass them a list whose lines already have newlines, you don't get blank spaces
+		in between your lines. 
+	- Bugfix -- getData() was getting an extra hour of SMV elements. Corrected in data._extractSensorLinesByDate()
+	- Bugfix -- the localDay() methods were in some cases reflecting an off-by-one error.
+	- Bugfix -- under certain conditions, subhourly Facts would be sorted incorrectly. Turns
+		out to be a jython bug (http://bugs.jython.org/issue1767); workaround implemented.
+		Little impact to users.
+	- Various domainquery methods now raise more specific errors.
+	
+1.12:
+	- All station methods (eg findStations(), getAllStations()) now work only with the set of
+		visible stations (ie non-test, non-abandoned). If for some reason you need to retrieve
+		all stations including test and abandoned stations, you can still do so through the 
+		methods of the stationDao object.
+	- graph() now takes an optional elements argument which expresses which elements in the
+		data should be graphed. Examples: 'graph(data,elements="T5")', 
+		'graph(data,elements=("temp","precip"),showMissing=False)'.
+	- graph() also now takes an optional lineWidth argument which lets you set the lines
+		heavier or lighter. The default is now a bit heavier. Example: graph(data,lineWidth=5)
+	- graph() takes yet another optional argument, title, which lets you set a title up in the 
+		window bar.
+	- findDate will now accept a python datetime object as an argument; if that datetime has
+		timezone information associated with it, the datetime will be converted to UTC
+		appropriately.
+	- FactCollections can now be added to and subtracted from one another.
+	- graphArbitraryData() now uses a different datatype internally so that graphs can be 
+		zoomed on both domain and range (still a bit experimental; please alert Egg to any
+		errors you encounter). graphArbitraryData() also now accepts an optional title parameter.
+	- Under the hood, crnscript now uses crnshared version 1.2.0. Users should be unaffected,
+		except that there is a new stationService object. The functionality which previously
+		belonged to stationDao is now divided between stationDao and stationService; users
+		should favor stationService where there is a choice (if you were not using the DAO
+		objects directly before, this won't matter much to you).
+	
+1.11:
+	- Adjustments under the hood to reconcile conflicts between subhourly() and the grouping
+		functions. Little or no impact on users.
+
+1.10:
+	- Somewhat major change: the groupByLocalDay(), groupByStation(), and groupByObservation()
+		functions are gone. Instead, you can call functions on returned data, like 
+		data.forStation('barrow').forLocalDay('20080131') to get subsets of the data. You can
+		iterate over stations using 'for station in data.stations:'. Similarly you can iterate
+		over data.localDays or data.observations. If you really want the kind of maps you
+		got before, you can use data.groupedByLocalDay(), data.groupedByStation(), or
+		data.groupedByObservation() to get them. Parallel to these three, there are also
+		data.forElement('temp') and data.forDatetime('10/10/10 10:00'), and relatedly,
+		data.elements, data.datetimes, data.groupedByElement(), and data.groupedByDatetime().
+		See Examples.py for some examples of these new idioms.
+	- new dateRange(start,end) function makes it easy to iterate over a range of hours,
+		e.g. "for hour in dateRange("10/01/11 8:00","10/01/11 15:00")"
+	- To ensure	columns match if copying into Excel or the like, call fillMissing(data).
+	- Tab completion! In the interactive console (on unix/linux boxes), hit the tab key during
+		any word to get completion (if it's unambiguous) or a list of possible completions.
+		Super-handy!
+	- scatter() now takes a collection of data like the other graphing methods, rather than
+		the output from groupByObservation().
+	- fixed() no longer uses leading zeros (to better match Fortran conventions).
+	- Facts are now sorted by station name, datetime, element name (el name replaces el id).
+	- Removed "rh" from element aliases (turns out that the natural choice, hourly
+		average RH, is a legacy element).
+	- Underlying structure: there's been a major change which supports several of the above
+		changes. getData() no longer returns a list of Facts, but rather a FactCollection, a
+		custom class which has a number of custom functions. This won't affect most users
+		directly except insofar as it allows the additional functionality listed above, but
+		it comes with some big gains under the hood.
+	- printlist() and printfile() now take a boolean argument (sortData=True) rather than a 
+		string argument ("nosort" or "unsorted"). This matches the other optional arguments
+		in crnscript.
+	- Removed summarizeObservations()
+	- -9999.0 and -999.0 are now both treated as missing values (previously it was just the 
+		former)
+	- findDate() now accepts unicode strings as arguments in addition to ordinary strings.
+	- crnscript was pulling individual soil temperatures from a product; it now pulls them
+		from the DB; this should rarely affect users.
+	- crnscript now uses crnshared-1.1.2.
+	
+1.02:
+	- crn-jython is now renamed to crnscript -- this will affect all users!
+	- Support for subhourly variables. Calling subhourly(data) returns a new list of Facts in 
+		which all subhourly variables (eg 5-minute precip) are given a single name and their
+		time is changed to the previous hour with a subhourly period appended (eg 15:00 might
+		become 14:35). The output of subhourly is suitable for passing to any of the print 
+		methods or to graph() or scatter(). If you have some other use for data organized in 
+		this way, let me know and I'll see if it can be accommodated.
+	- Reorganization -- ruby support is now eliminated. It was rudimentary compared to python
+		support, no one was using it, and it made it more complicated for new users to get up 
+		to speed with crnscript.
+	- The fixed() function now outputs element name rather than element id; this is part of a 
+		general CRN move from ids to names.
+	- New groupByLocalDay() function takes a list of facts and groups them by local day; similarly,
+		groupByStation() takes a list of facts and groups them by station. 
+	- Facts now support the basic arithmetic operators (+-*/). By use of these operators, the user
+		is presumed to be intending to operate on the values in Facts. This also allows the use of
+		sum and product with a list of Facts. Note that comparison operators (<>) and hence max and
+		min are *not* presumed to be referring to values; rather these comparison operators are
+		still used for sorting lists of Facts (ie they compare station/date/element) (however,
+		you can find the max/min of a list of Facts based on values by doing 
+		'max(data,key=lambda f: f.value)' or 'max([f.value for f in data])').
+	- Facts are still ordered and compared by station,datetime,element in that order, but the
+		station comparison is now in terms of state-name-vector rather than station id (again, in
+		keeping with a general crnscript move away from arbitrary ids).
+	- csv() will now accept the output from groupByObservation as its input.
+	- The graphing functions now return their JFreeChart Plot object, allowing customization of
+		the chart.
+	- Reorganization -- all the dsl functions were defined in pythonutilities.py; this is now
+		replaced with a dsl package, containing data, domainquery, graph, observation, output,
+		and utils modules. Hopefully no impact to users.
+	- Minor bugfix -- under certain circumstances trying to compare a Fact with a non-Fact would 
+		cause an error; this is now fixed.
+
+1.01:
+	- The new histogram() function, like graph(), takes the output from getData() (or the same
+		parameters getData() takes), as well as an optional numbins argument, and produces a 
+		histogram. Example: histogram(data,numBins=12)
+	- The new scatter() function takes the output from groupByObservation() and plots two variables
+		against each other, separated into series by station, with optional linear regression.
+		Specify which variables should be plotted, or the function will take its best guess.
+		Examples: scatter(groupedData), scatter(gd,"tmin","tmax",regress=True)
+	- graph() now takes an optional showMissing argument (e.g. showMissing=False) which determines
+		whether missing values should be graphed.
+	- Bugfix to getData(), which was showing dielectric soil moisture in place of volumetric.
+	- New summarizeObservations() method gives some info about how many stations are loaded for
+		each hour and how many in the most recent hour are GOES East and GOES West
+	- Fact.value is now a Decimal value, facilitating easy comparison, summing, rounding, etc.
+	- Facts now print using their official # of decimal places (except calculated els, which
+		have no official #), so if the last digit happens to be 0 it's not cut off.
+	- groupByObservation() has several changes. The key for each hourly observation is no longer
+		a StationDate object, but a tuple containing a station's name string and an attractively
+		formatted date. This makes it slightly harder to work with the resulting data, but much
+		more human-readable when printed; the latter seems to be the more common use case. Also 
+		groupByObservation() overrides the print method for its Facts to be less verbose. 
+		Finally, each list of Facts is now sorted. I'm open to further discussion about what 
+		output format would be most useful. The original is still available as 
+		pythonutilities._groupByObservationRaw.
+	- findStations() and findElements() now return their resulting set as a list. Although 
+		conceptually they return sets, it can be confusing to users when bracket notation
+		fails on sets.
+	- It's no longer possible to create a Fact from an empty ElementValue (one with no actual value)
+	- Bugfix: when getting soil moisture data for lots of stations, the ftp connection would 
+		choke and only some stations would be properly retrieved. Changed architecture to correct this.
+
+1.00:
+	- First major release

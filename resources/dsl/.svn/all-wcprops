@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl
+END
+data.py
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl/data.py
+END
+observation.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl/observation.py
+END
+domainquery.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl/domainquery.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl/__init__.py
+END
+output.py
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl/output.py
+END
+utils.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl/utils.py
+END
+graph.py
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl/graph.py
+END
+_doctests.py
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/dsl/_doctests.py
+END

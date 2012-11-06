@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao
+END
+NetworkDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/NetworkDao.html
+END
+ElementDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ElementDao.html
+END
+StreamDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/StreamDao.html
+END
+ObservationDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ObservationDao.html
+END
+DatetimeDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/DatetimeDao.html
+END
+ConnectionUnavailableException.html
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ConnectionUnavailableException.html
+END
+package-frame.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/package-frame.html
+END
+ConnectionDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ConnectionDao.html
+END
+PorDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/PorDao.html
+END
+package-summary.html
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/package-summary.html
+END
+QcDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/QcDao.html
+END
+package-tree.html
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/package-tree.html
+END
+NetworkDaoImpl.html
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/NetworkDaoImpl.html
+END
+ElementDao.LastModsQueryBuilder.html
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/ElementDao.LastModsQueryBuilder.html
+END
+StationDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/StationDao.html
+END
+StationMetadataDao.html
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/doc/crnshared/gov/noaa/ncdc/crn/dao/StationMetadataDao.html
+END

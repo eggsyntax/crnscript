@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources
+END
+FactCollection.py
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/FactCollection.py
+END
+Fact.py
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/Fact.py
+END
+ElementSubhourlyGroupManager.py
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/ElementSubhourlyGroupManager.py
+END
+QuickReference.vsd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/QuickReference.vsd
+END
+interactiveStartup.py
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/interactiveStartup.py
+END
+crn.py
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/crn.py
+END
+sqlQueryExecutor.py
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/sqlQueryExecutor.py
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn-repos/!svn/ver/34262/CRN/crnscript/tags/crnscript-1.17/resources/jdbc.properties
+END

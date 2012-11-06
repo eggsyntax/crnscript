@@ -1,0 +1,44 @@
+# mock jdbc settings
+mock.jdbc.driverClassName=org.hsqldb.jdbcDriver
+mock.jdbc.url=jdbc:hsqldb:file:src/test/hsqldb/crnmock
+mock.jdbc.username=sa
+mock.jdbc.password=
+mock.jdbc.defaultReadOnly=false
+mock.jdbc.defaultAutoCommit=true
+
+# jdbc settings
+jdbc.driverClassName=oracle.jdbc.driver.OracleDriver
+jdbc.defaultReadOnly=true
+jdbc.defaultAutoCommit=false
+
+# production CRN database
+#jdbc.username=crn
+#jdbc.password=oracle
+#jdbc.url=jdbc:oracle:thin:@twister:1521:dab2
+
+# test CRN read-only database on storm
+jdbc.url=jdbc:oracle:thin:@storm:1521:cdo
+jdbc.username=crnselect
+jdbc.password=crnselect_ora
+
+# test CRN read-only database on storm-b
+#jdbc.url=jdbc:oracle:thin:@storm-b:1521:cdobkup
+#jdbc.username=crnselect
+#jdbc.password=crnselect_ora
+
+# unit test jdbc settings
+unit.jdbc.driverClassName=oracle.jdbc.driver.OracleDriver
+unit.jdbc.url=jdbc:oracle:thin:@storm-b:1521:cdobkup
+unit.jdbc.username=crn_unit_test
+unit.jdbc.password=oracle
+unit.jdbc.defaultReadOnly=false
+unit.jdbc.defaultAutoCommit=true
+
+
+# isis jdbc settings
+isis.jdbc.driverClassName=oracle.jdbc.driver.OracleDriver
+isis.jdbc.url=jdbc:oracle:thin:@leeward:1521:mi3prod
+isis.jdbc.username=isis_prod
+isis.jdbc.password=TopxQ7skMeW6
+isis.jdbc.defaultReadOnly=true
+isis.jdbc.defaultAutoCommit=false
